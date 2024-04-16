@@ -1,0 +1,18 @@
+restart-times: 0
+jobscript: "slurm-jobscript.sh"
+cluster: "slurm-submit.py"
+cluster-status: "slurm-status.py"
+max-jobs-per-second: 1
+max-status-checks-per-second: 1
+local-cores: 4
+jobs: 10
+keep-going: true
+reason: true
+printshellcmds: true
+jobname: "{name}.{jobid}.snakejob.sh"
+conda-prefix: /mnt/beegfs/userdata/y_pradat/snakemake/conda
+singularity-prefix: /mnt/beegfs/userdata/y_pradat/snakemake/singularity
+wrapper-prefix: https://raw.githubusercontent.com/tdayris/snakemake-wrappers/Unofficial
+use-singularity: true
+use-conda: true
+# default-resources: "tmpdir=/mnt/beegfs/scratch/y_pradat/.tmp"
