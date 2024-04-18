@@ -120,7 +120,7 @@ opt_keys = ["array", "account", "begin", "cpus_per_task",
 arg_dict["job-name"] = "{name}.{jobid}.snakejob"
 
 # Output
-arg_dict["output"] = "workflow/logs/%x-%j-%N.oe"
+arg_dict["output"] = job_properties["log"][0].replace(".log", "_%j-%N.oe")
 
 if arg_dict["output"] is not None:
     os.makedirs(os.path.dirname(arg_dict["output"]), exist_ok=True)
