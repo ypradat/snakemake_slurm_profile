@@ -37,5 +37,5 @@ This latter plugin was not deposited on `pip` so you will have to locally instal
 
 ## Your configuration
 
-If using this plugin, make sure to replace the values of `conda-prefix` and `apptainer-prefix` with your own folders
-where you would have your conda/apptainer environments stored.
+If using this profile, make sure to replace the values of `conda-prefix` and `apptainer-prefix` with your own folders
+where you would have your conda/apptainer environments stored. Make sure also to install the executor plugin.
