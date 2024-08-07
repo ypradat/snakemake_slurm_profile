@@ -6,7 +6,6 @@ local-cores: 2
 jobs: 30
 keep-going: true
 printshellcmds: true
-jobname: "{name}.{jobid}.snakejob.sh"
 conda-prefix: /mnt/beegfs/userdata/y_pradat/snakemake/conda
 apptainer-prefix: /mnt/beegfs/userdata/y_pradat/snakemake/singularity
 wrapper-prefix: https://github.com/snakemake/snakemake-wrappers/raw/
