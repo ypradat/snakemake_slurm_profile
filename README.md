@@ -20,9 +20,9 @@ NOTE: If you are using snakemake v7 or an earlier version, switch to the `snakem
 
 Read the snakemake documentation about [executor
 plugins](https://snakemake.readthedocs.io/en/stable/tutorial/additional_features.html#cluster-or-cloud-execution) to
-learn more about this feature. As for snakemake v7 and earlier, the configuration varies according to the scheduler that
-your HPC rely on, and there are ready-to-use plugins for the most commonly used schedulers such as slurm. Check the
-[slurm snakemake executor plugin
+learn more about this feature. As configurations vary according to the scheduler that your HPC rely on, different
+ready-to-use executor plugins have been shared publicly similarly to the public snakemake profiles for snakemake v7 and
+earlier version. Check the [slurm snakemake executor plugin
 documentation](https://snakemake.github.io/snakemake-plugin-catalog/plugins/executor/slurm.html) or the [github
 code](https://github.com/snakemake/snakemake-executor-plugin-slurm).
 In short, the plugin is a python package that you should install in the environment alongside your snakemake command. To
@@ -36,6 +36,9 @@ This latter plugin was not deposited on `pip` so you will have to locally instal
 /path/to/plugin` from the environment where snakemake is installed.
 
 ## Your configuration
+
+To install this profile, add it as a folder `$HOME/.config/snakemake/<profile_name>`. Then when
+running the snakemake command, make sure to specify `--profile <profile_name>`.
 
 If using this profile, make sure to replace the values of `conda-prefix` and `apptainer-prefix` with your own folders
 where you would have your conda/apptainer environments stored. Make sure also to install the executor plugin.
